@@ -69,7 +69,7 @@ export function Services() {
               background: "rgba(212,175,55,0.1)",
               border: "1px solid rgba(212,175,55,0.3)",
               color: "#D4AF37",
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             OUR SERVICES
@@ -77,7 +77,7 @@ export function Services() {
           <h2
             className="mb-4"
             style={{
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
               fontSize: "clamp(1.8rem, 4vw, 3rem)",
               fontWeight: 700,
               color: "#ffffff",
@@ -153,7 +153,7 @@ export function Services() {
               <h3
                 className="mb-3"
                 style={{
-                  fontFamily: "'Orbitron', sans-serif",
+                  fontFamily: "sans-serif",
                   fontSize: "1.15rem",
                   fontWeight: 600,
                   color: "#ffffff",

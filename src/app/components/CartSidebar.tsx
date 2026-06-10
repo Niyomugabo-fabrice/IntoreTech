@@ -54,7 +54,7 @@ export function CartSidebar({ open, onClose }: CartSidebarProps) {
                 <ShoppingBag size={20} style={{ color: "#D4AF37" }} />
                 <span
                   style={{
-                    fontFamily: "'Orbitron', sans-serif",
+                    fontFamily: "sans-serif",
                     color: "#ffffff",
                     fontSize: "1rem",
                   }}
@@ -113,7 +113,7 @@ export function CartSidebar({ open, onClose }: CartSidebarProps) {
                       </p>
                       <p
                         className="text-sm mb-3"
-                        style={{ color: "#D4AF37", fontFamily: "'Orbitron', sans-serif" }}
+                        style={{ color: "#D4AF37", fontFamily: "sans-serif" }}
                       >
                         ${item.price.toLocaleString()}
                       </p>
@@ -164,7 +164,7 @@ export function CartSidebar({ open, onClose }: CartSidebarProps) {
                   </span>
                   <span
                     style={{
-                      fontFamily: "'Orbitron', sans-serif",
+                      fontFamily: "sans-serif",
                       color: "#D4AF37",
                       fontSize: "1.25rem",
                     }}

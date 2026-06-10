@@ -84,14 +84,14 @@ export function Testimonials() {
               background: "rgba(212,175,55,0.1)",
               border: "1px solid rgba(212,175,55,0.3)",
               color: "#D4AF37",
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             CLIENT REVIEWS
           </span>
           <h2
             style={{
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
               fontSize: "clamp(1.8rem, 4vw, 3rem)",
               fontWeight: 700,
               color: "#ffffff",

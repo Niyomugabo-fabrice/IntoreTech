@@ -29,7 +29,7 @@ function Counter({ target, suffix, color }: { target: number; suffix: string; co
   }, [inView, target]);
 
   return (
-    <span ref={ref} style={{ color, fontFamily: "'Orbitron', sans-serif", fontSize: "3rem", fontWeight: 800 }}>
+    <span ref={ref} style={{ color, fontFamily: "sans-serif", fontSize: "3rem", fontWeight: 800 }}>
       {count}{suffix}
     </span>
   );

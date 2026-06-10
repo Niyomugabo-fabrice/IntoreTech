@@ -92,7 +92,7 @@ export function Portfolio() {
               background: "rgba(212,175,55,0.1)",
               border: "1px solid rgba(212,175,55,0.3)",
               color: "#D4AF37",
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             OUR WORK
@@ -100,7 +100,7 @@ export function Portfolio() {
           <h2
             className="mb-4"
             style={{
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
               fontSize: "clamp(1.8rem, 4vw, 3rem)",
               fontWeight: 700,
               color: "#ffffff",
@@ -183,7 +183,7 @@ export function Portfolio() {
                       background: "rgba(0,0,0,0.7)",
                       border: "1px solid rgba(212,175,55,0.4)",
                       color: "#D4AF37",
-                      fontFamily: "'Orbitron', sans-serif",
+                      fontFamily: "sans-serif",
                     }}
                   >
                     <TrendingUp size={10} /> {p.metric}
@@ -212,7 +212,7 @@ export function Portfolio() {
                   </span>
                   <h3
                     className="mb-2"
-                    style={{ fontFamily: "'Orbitron', sans-serif", color: "#ffffff", fontSize: "0.95rem" }}
+                    style={{ fontFamily: "sans-serif", color: "#ffffff", fontSize: "0.95rem" }}
                   >
                     {p.title}
                   </h3>

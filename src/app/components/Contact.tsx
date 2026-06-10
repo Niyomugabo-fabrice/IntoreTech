@@ -82,14 +82,14 @@ export function Contact() {
               background: "rgba(212,175,55,0.1)",
               border: "1px solid rgba(212,175,55,0.3)",
               color: "#D4AF37",
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             GET IN TOUCH
           </span>
           <h2
             style={{
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
               fontSize: "clamp(1.8rem, 4vw, 3rem)",
               fontWeight: 700,
               color: "#ffffff",
@@ -174,7 +174,7 @@ export function Contact() {
               <div className="flex items-center gap-2 mb-2">
                 <Phone size={14} style={{ color: "#D4AF37" }} />
                 <span
-                  style={{ color: "#D4AF37", fontFamily: "'Orbitron', sans-serif", fontSize: "0.8rem" }}
+                  style={{ color: "#D4AF37", fontFamily: "sans-serif", fontSize: "0.8rem" }}
                 >
                   BUSINESS HOURS
                 </span>
@@ -204,7 +204,7 @@ export function Contact() {
             >
               <h3
                 className="mb-2"
-                style={{ fontFamily: "'Orbitron', sans-serif", color: "#ffffff", fontSize: "1.1rem" }}
+                style={{ fontFamily: "sans-serif", color: "#ffffff", fontSize: "1.1rem" }}
               >
                 Send a Message
               </h3>

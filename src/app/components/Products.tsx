@@ -64,7 +64,7 @@ export function Products() {
               background: "rgba(37,99,235,0.1)",
               border: "1px solid rgba(37,99,235,0.3)",
               color: "#60A5FA",
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             PRODUCT MARKETPLACE
@@ -72,7 +72,7 @@ export function Products() {
           <h2
             className="mb-4"
             style={{
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
               fontSize: "clamp(1.8rem, 4vw, 3rem)",
               fontWeight: 700,
               color: "#ffffff",
@@ -247,7 +247,7 @@ export function Products() {
                   <div className="flex items-center justify-between">
                     <span
                       style={{
-                        fontFamily: "'Orbitron', sans-serif",
+                        fontFamily: "sans-serif",
                         color: "#D4AF37",
                         fontSize: "0.85rem",
                       }}

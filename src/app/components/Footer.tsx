@@ -54,7 +54,7 @@ export function Footer() {
               </div>
               <span
                 style={{
-                  fontFamily: "'Orbitron', sans-serif",
+                  fontFamily: "sans-serif",
                   fontSize: "1.2rem",
                   background: "linear-gradient(90deg, #D4AF37, #FFD700)",
                   WebkitBackgroundClip: "text",
@@ -94,7 +94,7 @@ export function Footer() {
           <div>
             <h4
               className="mb-4 text-sm tracking-wider"
-              style={{ fontFamily: "'Orbitron', sans-serif", color: "#D4AF37" }}
+              style={{ fontFamily: "sans-serif", color: "#D4AF37" }}
             >
               COMPANY
             </h4>
@@ -117,7 +117,7 @@ export function Footer() {
           <div>
             <h4
               className="mb-4 text-sm tracking-wider"
-              style={{ fontFamily: "'Orbitron', sans-serif", color: "#D4AF37" }}
+              style={{ fontFamily: "sans-serif", color: "#D4AF37" }}
             >
               SERVICES
             </h4>
@@ -139,7 +139,7 @@ export function Footer() {
           <div>
             <h4
               className="mb-4 text-sm tracking-wider"
-              style={{ fontFamily: "'Orbitron', sans-serif", color: "#D4AF37" }}
+              style={{ fontFamily: "sans-serif", color: "#D4AF37" }}
             >
               PRODUCTS
             </h4>
@@ -158,7 +158,7 @@ export function Footer() {
 
             <h4
               className="mb-3 text-sm tracking-wider"
-              style={{ fontFamily: "'Orbitron', sans-serif", color: "#2563EB" }}
+              style={{ fontFamily: "sans-serif", color: "#2563EB" }}
             >
               CONTACT
             </h4>

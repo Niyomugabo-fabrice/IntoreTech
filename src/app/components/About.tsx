@@ -56,7 +56,7 @@ export function About() {
               background: "rgba(212,175,55,0.1)",
               border: "1px solid rgba(212,175,55,0.3)",
               color: "#D4AF37",
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             WHO WE ARE
@@ -64,7 +64,7 @@ export function About() {
           <h2
             className="mb-6"
             style={{
-              fontFamily: "'Orbitron', sans-serif",
+              fontFamily: "sans-serif",
               fontSize: "clamp(1.8rem, 4vw, 3rem)",
               fontWeight: 700,
               color: "#ffffff",
@@ -99,7 +99,7 @@ export function About() {
           >
             <h3
               className="mb-4"
-              style={{ fontFamily: "'Orbitron', sans-serif", color: "#ffffff", fontSize: "1.5rem" }}
+              style={{ fontFamily: "sans-serif", color: "#ffffff", fontSize: "1.5rem" }}
             >
               Our Story
             </h3>
@@ -162,7 +162,7 @@ export function About() {
                 backdropFilter: "blur(20px)",
               }}
             >
-              <p style={{ fontFamily: "'Orbitron', sans-serif", color: "#D4AF37", fontSize: "1.5rem", fontWeight: 700 }}>
+              <p style={{ fontFamily: "sans-serif", color: "#D4AF37", fontSize: "1.5rem", fontWeight: 700 }}>
                 500+
               </p>
               <p style={{ color: "rgba(255,255,255,0.6)", fontFamily: "'Inter', sans-serif", fontSize: "0.8rem" }}>
@@ -196,7 +196,7 @@ export function About() {
               </div>
               <h4
                 className="mb-3"
-                style={{ fontFamily: "'Orbitron', sans-serif", color: "#ffffff", fontSize: "1rem" }}
+                style={{ fontFamily: "sans-serif", color: "#ffffff", fontSize: "1rem" }}
               >
                 {p.title}
               </h4>
