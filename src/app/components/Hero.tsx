@@ -1,6 +1,6 @@
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { ArrowRight, Play, Sparkles, Globe, Smartphone, Database, ShoppingBag, Palette, Rocket } from "lucide-react";
+import { ArrowRight, Play,Globe, Smartphone, Database, ShoppingBag, Palette, Rocket } from "lucide-react";
 
 const BADGES = [
   { icon: Globe, label: "Modern Websites" },
@@ -21,6 +21,39 @@ const HERO_IMAGES = [
 ];
 
 export function Hero() {
+  const phrases = [
+  "Elevate your brand value",
+  "Digitize your operations",
+  "Expand your online presence",
+  "Streamline your business processes",
+  "Scale with modern technology",
+];
+const [text, setText] = useState("");
+const [index, setIndex] = useState(0);
+const [subIndex, setSubIndex] = useState(0);
+const [deleting, setDeleting] = useState(false);
+useEffect(() => {
+  if (index === phrases.length) return;
+
+  if (subIndex === phrases[index].length + 1 && !deleting) {
+    setTimeout(() => setDeleting(true), 1000);
+    return;
+  }
+
+  if (subIndex === 0 && deleting) {
+    setDeleting(false);
+    setIndex((prev) => (prev + 1) % phrases.length);
+    return;
+  }
+
+  const timeout = setTimeout(() => {
+    setSubIndex((prev) => prev + (deleting ? -1 : 1));
+  }, deleting ? 40 : 80);
+
+  setText(phrases[index].substring(0, subIndex));
+
+  return () => clearTimeout(timeout);
+}, [subIndex, index, deleting]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -69,62 +102,64 @@ export function Hero() {
       <div className="relative z-10 w-full h-full px-4 py-16 sm:py-20 lg:py-32 flex items-center">
         <div className="w-full max-w-2xl">
           {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15 }}
-            className="leading-tight text-xl sm:text-2xl lg:text-4xl mb-4"
-            style={{
-              fontFamily: "sans-serif",
-              fontWeight: 800,
-              background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Modern Websites & Software Solutions That Grow Your Business
-          </motion.h1>
+          <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.3 }}
+  className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
+   style={{
+            fontFamily: "sans-serif",
+            fontSize: "clamp(2rem, 5vw, 7rem)",
+            fontWeight: 800,
+            background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+>
+  <p style={{ color: "rgba(255,255,255,0.65)", marginBottom: "6px" }}>
+    Work with IntoreTech to
+  </p>
+
+  <AnimatePresence mode="wait">
+    <motion.p
+      key={phrases[index]}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+      style={{
+            fontFamily: "'Orbitron', sans-serif",
+            fontSize: "clamp(1rem, 3vw, 2rem)",
+            fontWeight: 800,
+            background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+    >
+       {text}
+    </motion.p>
+  </AnimatePresence>
+</motion.div>
 
           {/* Subheadline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-6 leading-relaxed text-sm sm:text-base"
-            style={{
-              color: "rgba(255,255,255,0.65)",
-              fontFamily: "'Inter', sans-serif",
-            }}
-          >
-            IntoreTech designs and develops high-performance websites, mobile applications, custom business systems, digital platforms, and technology solutions that help businesses grow and compete in the digital era.
-          </motion.p>
-
-          {/* Feature badges */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-wrap gap-2 mb-6"
-          >
-            {BADGES.map((b, i) => (
-              <motion.div
-                key={b.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 + i * 0.07 }}
-                className="flex items-center gap-1 px-2 py-1 rounded-full text-xs sm:text-sm"
-                style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  color: "rgba(255,255,255,0.75)",
-                  fontFamily: "'Inter', sans-serif",
-                }}
-              >
-                <b.icon size={12} style={{ color: "#2563EB" }} />
-                <span className="hidden sm:inline">{b.label}</span>
-              </motion.div>
-            ))}
-          </motion.div>
+      
+      {/* Feature badges */}
+<div className="flex flex-wrap gap-4 mb-8">
+  {BADGES.map((badge) => (
+        <div
+          key={badge.label}
+          className="flex items-center gap-2 px-5 py-3 rounded-full"
+          style={{
+            background: "rgba(255,255,255,0.03)",
+            border: "1px solid rgba(255,255,255,0.12)",
+            backdropFilter: "blur(10px)",
+          }}
+        >
+          <badge.icon size={18} color="#2563EB" />
+          <span className="text-gray-300">{badge.label}</span>
+        </div>
+  ))}
+</div>
 
           {/* CTA buttons */}
           <motion.div
@@ -155,7 +190,7 @@ export function Hero() {
                 background: "rgba(37,99,235,0.15)",
                 border: "1px solid rgba(37,99,235,0.5)",
                 color: "#ffffff",
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "sans-serif",
               }}
             >
               View Products <ArrowRight size={14} />
