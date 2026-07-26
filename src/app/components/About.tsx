@@ -142,7 +142,7 @@ export function About() {
           >
             <div className="relative rounded-2xl overflow-hidden" style={{ height: 360 }}>
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=500&fit=crop&auto=format"
+                src="images/about.png"
                 alt="IntoreTech team collaborating"
                 className="w-full h-full object-cover"
               />

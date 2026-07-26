@@ -13,7 +13,6 @@ const BADGES = [
 
 // Sample images array - Edit these paths to your image locations
 const HERO_IMAGES = [
-  "/images/hero1.png",
   "/images/hero2.png",
   "/images/hero3.png",
   "/images/hero4.png",
