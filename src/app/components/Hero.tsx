@@ -133,7 +133,7 @@ useEffect(() => {
       transition={{ duration: 0.5 }}
       style={{
             fontFamily: "sans-serif",
-            fontSize: "clamp(2rem, 5vw, 3rem)",
+            fontSize: "clamp(1rem, 3vw, 2rem)",
             fontWeight: 900,
             letterSpacing: "0.02em",
             background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
