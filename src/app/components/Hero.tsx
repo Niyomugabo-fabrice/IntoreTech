@@ -107,7 +107,7 @@ useEffect(() => {
   transition={{ duration: 0.8, delay: 0.3 }}
   className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
    style={{
-            fontFamily: "sans-serif",
+            fontFamily: "serif",
             fontSize: "clamp(2rem, 5vw, 7rem)",
             fontWeight: 800,
             background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
@@ -127,9 +127,11 @@ useEffect(() => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
       style={{
-            fontFamily: "'Orbitron', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "clamp(1rem, 3vw, 2rem)",
-            fontWeight: 800,
+            fontWeight: 900,
+            fontStyle: "italic",
+            letterSpacing: "0.02em",
             background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
