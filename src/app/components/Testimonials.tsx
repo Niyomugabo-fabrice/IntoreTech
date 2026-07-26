@@ -6,15 +6,15 @@ const TESTIMONIALS = [
   {
     name: "David Nkurunziza",
     role: "CEO, RwandaShop Ltd",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&auto=format",
+    image: "images/test5.png",
     review: "IntoreTech transformed our business completely. Our new e-commerce platform increased our monthly revenue by 340%. The team's attention to detail and technical expertise is unmatched in Rwanda.",
-    stars: 5,
+    stars: 4,
     company: "RwandaShop",
   },
   {
-    name: "Dr. Amina Uwimana",
+    name: "Amina Uwimana",
     role: "Medical Director, MedCare Rwanda",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&auto=format",
+    image: "images/test1.png",
     review: "The hospital management system IntoreTech built for us has revolutionized how we manage patient data and operations. What used to take hours now takes minutes. Incredible team!",
     stars: 5,
     company: "MedCare Rwanda",
@@ -22,7 +22,7 @@ const TESTIMONIALS = [
   {
     name: "Jean-Pierre Habimana",
     role: "Founder, Kigali Rides",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&auto=format",
+    image:"images/test2.png" ,
     review: "From concept to launch in 90 days. IntoreTech delivered our ride-hailing app on time and on budget. 80,000 downloads later and the app is still rock solid. Five stars isn't enough!",
     stars: 5,
     company: "Kigali Rides",
@@ -30,7 +30,7 @@ const TESTIMONIALS = [
   {
     name: "Sarah Mukamazimpaka",
     role: "Digital Director, AfriBank",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop&auto=format",
+    image: "images/test4.png",
     review: "We hired IntoreTech to rebuild our corporate website and digital presence. The result is absolutely stunning — our brand now feels on par with international banks. Our client acquisition doubled.",
     stars: 5,
     company: "AfriBank",
@@ -38,7 +38,7 @@ const TESTIMONIALS = [
   {
     name: "Patrick Kagabo",
     role: "CTO, FreshMart Africa",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&auto=format",
+    image: "images/test3.png",
     review: "The Flutter app IntoreTech built for FreshMart exceeded all expectations. Fast, beautiful, and reliable. The post-launch support has been exceptional. Highly recommend them to any serious business.",
     stars: 5,
     company: "FreshMart Africa",

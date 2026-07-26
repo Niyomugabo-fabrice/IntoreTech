@@ -3,8 +3,8 @@ import { motion, useInView } from "motion/react";
 import { Trophy, Users, Heart, Clock } from "lucide-react";
 
 const STATS = [
-  { icon: Trophy, value: 500, suffix: "+", label: "Projects Completed", color: "#D4AF37" },
-  { icon: Users, value: 100, suffix: "+", label: "Clients Served", color: "#2563EB" },
+  { icon: Trophy, value: 50, suffix: "+", label: "Projects Completed", color: "#D4AF37" },
+  { icon: Users, value: 20, suffix: "+", label: "Clients Served", color: "#2563EB" },
   { icon: Heart, value: 99, suffix: "%", label: "Customer Satisfaction", color: "#D4AF37" },
   { icon: Clock, value: 24, suffix: "/7", label: "Support Available", color: "#2563EB" },
 ];

@@ -21,11 +21,11 @@ const HERO_IMAGES = [
 
 export function Hero() {
   const phrases = [
-  "Elevate your brand value",
-  "Digitize your operations",
-  "Expand your online presence",
-  "Streamline your business processes",
-  "Scale with modern technology",
+  "First in Kigali",
+  "Your solution",
+  "Innovate your business",
+  "Turn ur ideas into reality",
+  "Make Tech your partner",
 ];
 const [text, setText] = useState("");
 const [index, setIndex] = useState(0);
@@ -108,17 +108,22 @@ useEffect(() => {
   className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
    style={{
             fontFamily: "serif",
-            fontSize: "clamp(2rem, 5vw, 7rem)",
+            fontSize: "clamp(1rem, 3vw, 4rem)",
             fontWeight: 800,
-            background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
             WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
+            color: "yellow"
           }}
 >
-  <p style={{ color: "rgba(255,255,255,0.65)", marginBottom: "6px" }}>
-    Work with IntoreTech to
-  </p>
-
+   Intore{""}
+            <span
+              style={{
+                background: "linear-gradient(90deg, #fff, #FFF)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+            Tech
+            </span>
   <AnimatePresence mode="wait">
     <motion.p
       key={phrases[index]}
@@ -127,10 +132,9 @@ useEffect(() => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
       style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: "clamp(1rem, 3vw, 2rem)",
+            fontFamily: "sans-serif",
+            fontSize: "clamp(2rem, 5vw, 3rem)",
             fontWeight: 900,
-            fontStyle: "italic",
             letterSpacing: "0.02em",
             background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
             WebkitBackgroundClip: "text",

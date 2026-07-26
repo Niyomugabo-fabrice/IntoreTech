@@ -163,7 +163,7 @@ export function About() {
               }}
             >
               <p style={{ fontFamily: "sans-serif", color: "#D4AF37", fontSize: "1.5rem", fontWeight: 700 }}>
-                500+
+                50+
               </p>
               <p style={{ color: "rgba(255,255,255,0.6)", fontFamily: "'Inter', sans-serif", fontSize: "0.8rem" }}>
                 Successful Projects

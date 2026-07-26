@@ -18,6 +18,7 @@ export function Products() {
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("Default");
   const [added, setAdded] = useState<number | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const { addItem } = useCart();
 
   const filtered = useMemo(() => {
@@ -184,6 +185,7 @@ export function Products() {
                   border: "1px solid rgba(255,255,255,0.07)",
                   transition: "border-color 0.3s, box-shadow 0.3s",
                 }}
+                onClick={() => setSelectedProduct(p)}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(212,175,55,0.3)";
                   (e.currentTarget as HTMLDivElement).style.boxShadow = "0 10px 40px rgba(212,175,55,0.1)";
@@ -257,7 +259,10 @@ export function Products() {
 
                     <motion.button
                       whileTap={{ scale: 0.9 }}
-                      onClick={() => handleAdd(p)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleAdd(p);
+                      }}
                       className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors"
                       style={{
                         background: added === p.id ? "rgba(34,197,94,0.2)" : "rgba(212,175,55,0.15)",
@@ -273,6 +278,62 @@ export function Products() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        <AnimatePresence>
+          {selectedProduct && (
+            <motion.div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <div
+                className="absolute inset-0 bg-black/80"
+                onClick={() => setSelectedProduct(null)}
+              />
+              <motion.div
+                className="relative max-w-4xl w-full rounded-[32px] overflow-hidden border border-white/10 bg-[#08080e] shadow-[0_30px_80px_rgba(0,0,0,0.45)]"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.25 }}
+              >
+                <button
+                  onClick={() => setSelectedProduct(null)}
+                  className="absolute top-4 right-4 z-20 rounded-full border border-white/10 bg-black/70 p-3 text-white transition hover:bg-white/10"
+                  aria-label="Close enlarged product image"
+                >
+                  ×
+                </button>
+                <div className="w-full bg-black">
+                  <img
+                    src={selectedProduct.image}
+                    alt={selectedProduct.name}
+                    className="w-full h-[min(80vh,600px)] object-contain bg-[#0a0a0f]"
+                  />
+                </div>
+                <div className="p-6 sm:p-8">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <h3 className="text-2xl font-semibold text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
+                        {selectedProduct.name}
+                      </h3>
+                      <p className="text-sm text-gray-400" style={{ fontFamily: "'Inter', sans-serif" }}>
+                        {selectedProduct.category}
+                      </p>
+                    </div>
+                    <span className="inline-flex items-center rounded-full bg-[#11151e] px-4 py-2 text-sm font-semibold text-amber-300" style={{ fontFamily: "'Inter', sans-serif" }}>
+                      ${selectedProduct.price.toLocaleString()}
+                    </span>
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-gray-300" style={{ fontFamily: "'Inter', sans-serif" }}>
+                    Click outside or use the close button to return to the product grid.
+                  </p>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {filtered.length === 0 && (
           <div className="text-center py-20">
