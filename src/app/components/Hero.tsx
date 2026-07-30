@@ -24,7 +24,7 @@ export function Hero() {
   "First in Kigali",
   "Your solution",
   "Innovate your business",
-  "Turn ur ideas into reality",
+  "Turn your ideas into reality",
   "Make Tech your partner",
 ];
 const [text, setText] = useState("");
