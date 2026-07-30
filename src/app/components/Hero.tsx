@@ -108,7 +108,7 @@ useEffect(() => {
   className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
    style={{
             fontFamily: "serif",
-            fontSize: "clamp(1rem, 3vw, 4rem)",
+            fontSize: "clamp(2rem, 4vw, 5rem)",
             fontWeight: 800,
             WebkitBackgroundClip: "text",
             color: "yellow"
