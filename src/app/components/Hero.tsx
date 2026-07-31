@@ -21,11 +21,11 @@ const HERO_IMAGES = [
 
 export function Hero() {
   const phrases = [
-  "First in Kigali",
+  "First Dev in Kigali",
   "Your solution",
   "Innovate your business",
   "Turn your ideas into reality",
-  "Make Tech your partner",
+  "Make Tech your Best partner",
 ];
 const [text, setText] = useState("");
 const [index, setIndex] = useState(0);
@@ -104,8 +104,8 @@ useEffect(() => {
           <motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.3 }}
-  className="mb-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
+  transition={{ duration: 1, delay: 0.6 }}
+  className="mb-20 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
    style={{
             fontFamily: "serif",
             fontSize: "clamp(2rem, 4vw, 5rem)",
@@ -132,14 +132,16 @@ useEffect(() => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
       style={{
-            fontFamily: "sans-serif",
-            fontSize: "clamp(1rem, 3vw, 2rem)",
-            fontWeight: 900,
-            letterSpacing: "0.02em",
-            background: "linear-gradient(135deg, #ffffff 0%, #D4AF37 50%, #FFD700 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+  fontFamily: "sans-serif",
+  fontSize: "clamp(1rem, 3vw, 2rem)",
+  fontWeight: 900,
+  lineHeight: 1.4,
+  paddingBottom: "6px",
+  letterSpacing: "0.02em",
+  background: "linear-gradient(135deg,#fff,#D4AF37,#FFD700)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+}}
     >
        {text}
     </motion.p>
