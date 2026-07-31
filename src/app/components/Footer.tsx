@@ -68,7 +68,7 @@ export function Footer() {
               className="mb-6 leading-relaxed text-sm"
               style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Inter', sans-serif" }}
             >
-              Premium technology company specializing in web development, mobile applications, business systems, and electronic device trading across East Africa and beyond.
+              Premium technology company specializing in web development, mobile applications, business systems, and electronic device trading across East Rwanda and beyond.
             </p>
             <div className="flex gap-3">
               {SOCIAL.map((s, i) => (

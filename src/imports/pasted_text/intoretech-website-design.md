@@ -24,7 +24,7 @@ The Intore warrior represents:
 • Speed
 • Technology
 • Digital Transformation
-• African Excellence
+• Rwandan Excellence
 • Forward Movement
 
 The visual identity must feel comparable to companies such as Apple, Tesla, Stripe, Linear, Framer, Vercel, Nvidia, and Notion while maintaining a unique IntoreTech identity.

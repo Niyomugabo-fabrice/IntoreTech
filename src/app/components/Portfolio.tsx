@@ -36,7 +36,7 @@ const PROJECTS = [
     tags: ["React", "Node.js", "Blockchain", "AWS"],
     image: "images/afripay.png",
     metric: "$2M+ Processed",
-    desc: "Secure fintech platform processing millions in monthly transactions across East Africa.",
+    desc: "Secure fintech platform processing millions in monthly transactions across East Rwanda.",
   },
   {
     title: "FreshMart Grocery App",

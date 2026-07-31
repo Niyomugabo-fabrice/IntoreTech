@@ -5,13 +5,13 @@ const PILLARS = [
   {
     icon: Target,
     title: "Our Mission",
-    text: "To empower African businesses and entrepreneurs with world-class technology solutions — websites, mobile apps, custom systems, and premium devices — that unlock growth, efficiency, and global competitiveness.",
+    text: "To empower Rwandan businesses and entrepreneurs with world-class technology solutions — websites, mobile apps, custom systems, and premium devices — that unlock growth, efficiency, and global competitiveness.",
     color: "#D4AF37",
   },
   {
     icon: Eye,
     title: "Our Vision",
-    text: "To be Africa's most trusted and innovative technology company — recognized globally for building digital infrastructure that transforms economies and elevates lives through technology.",
+    text: "To be Rwanda's most trusted and innovative technology company — recognized globally for building digital infrastructure that transforms economies and elevates lives through technology.",
     color: "#2563EB",
   },
   {
@@ -23,7 +23,7 @@ const PILLARS = [
   {
     icon: Zap,
     title: "Our Objectives",
-    text: "Deliver 1,000+ successful digital projects by 2026. Expand across East Africa. Launch an advanced digital products studio and become a leading technology hub for African startups.",
+    text: "Deliver 1,000+ successful digital projects by 2026. Expand across East Rwanda. Launch an advanced digital products studio and become a leading technology hub for Rwandan startups.",
     color: "#2563EB",
   },
 ];
@@ -78,14 +78,14 @@ export function About() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              African Excellence
+              Rwandan Excellence
             </span>
           </h2>
           <p
             className="max-w-2xl mx-auto leading-relaxed"
             style={{ color: "rgba(255,255,255,0.55)", fontFamily: "'Inter', sans-serif", fontSize: "1.05rem" }}
           >
-            IntoreTech was founded with one bold ambition: to build the technology that Africa needs to compete on the global stage. Named after the legendary Intore warriors of Rwanda — symbols of strength, speed, and excellence — we bring that same spirit to every line of code we write.
+            IntoreTech was founded with one bold ambition: to build the technology that Rwanda needs to compete on the global stage. Named after the legendary Intore warriors of Rwanda — symbols of strength, speed, and excellence — we bring that same spirit to every line of code we write.
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export function About() {
               className="leading-relaxed mb-4"
               style={{ color: "rgba(255,255,255,0.6)", fontFamily: "'Inter', sans-serif" }}
             >
-              Founded in Kigali, Rwanda, IntoreTech emerged from a simple yet powerful realization: African businesses deserve technology partners who understand their context, speak their language, and dream as big as they do.
+              Founded in Kigali, Rwanda, IntoreTech emerged from a simple yet powerful realization: Rwandan businesses deserve technology partners who understand their context, speak their language, and dream as big as they do.
             </p>
             <p
               className="leading-relaxed mb-6"
@@ -116,7 +116,7 @@ export function About() {
               What started as a small web development studio has grown into a full-spectrum technology company — building websites, mobile applications, business automation systems, and distributing premium electronic devices across the region.
             </p>
             <div className="flex flex-wrap gap-3">
-              {["Kigali, Rwanda", "Est. 2020", "Team of 20+", "Pan-African Vision"].map((tag) => (
+              {["Kigali, Rwanda", "Est. 2020", "Team of 20+", "Pan-Rwandan Vision"].map((tag) => (
                 <span
                   key={tag}
                   className="px-3 py-1.5 rounded-full text-sm"

@@ -37,11 +37,11 @@ const TESTIMONIALS = [
   },
   {
     name: "Patrick Kagabo",
-    role: "CTO, FreshMart Africa",
+    role: "CTO, FreshMart Rwanda",
     image: "images/test3.png",
     review: "The Flutter app IntoreTech built for FreshMart exceeded all expectations. Fast, beautiful, and reliable. The post-launch support has been exceptional. Highly recommend them to any serious business.",
     stars: 5,
-    company: "FreshMart Africa",
+    company: "FreshMart Rwanda",
   },
 ];
 
